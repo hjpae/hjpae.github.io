@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CEAR - Center for Emergent Alignment Research</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="cear_favicon.png" />
+  <title>EARL – Emergent Alignment Research Lab</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="earl_favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="The Center for Emergent Alignment Research (CEAR) explores the development of coherent minds, agency, and alignment in artificial and biological systems."
+    content="The Emergent Alignment Research Lab (EARL) explores the developmental and architectural foundations of coherent agency and alignment."
   />
   <style>
     :root {
@@ -68,6 +68,7 @@
       display: flex;
       align-items: center;
       gap: 0.85rem;
+      cursor: pointer;
     }
 
     .logo-img {
@@ -149,6 +150,12 @@
       justify-content: center;
     }
 
+    .hero-actions-wrapper {
+      margin-top: 1.8rem;
+      display: flex;
+      justify-content: center;
+    }
+
     .btn {
       display: inline-flex;
       align-items: center;
@@ -174,6 +181,18 @@
     .btn-primary:hover {
       transform: translateY(-1px);
       box-shadow: 0 18px 36px rgba(15, 23, 42, 0.2);
+    }
+
+    .btn-ghost {
+      border-color: var(--border);
+      color: var(--accent-soft);
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-ghost:hover {
+      border-color: #d4d4d8;
+      background: #f9fafb;
+      color: var(--accent);
     }
 
     section {
@@ -273,7 +292,7 @@
     }
 
     .partner-item-logo {
-      flex: 0 0 110px; 
+      flex: 0 0 110px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -314,8 +333,6 @@
       }
     }
 
-
-
     footer {
       border-top: 1px solid var(--border);
       margin-top: 3rem;
@@ -329,7 +346,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center; 
+      text-align: center;
       gap: 0.3rem;
       font-size: 0.8rem;
       color: var(--text-muted);
@@ -352,69 +369,67 @@
     }
   </style>
 </head>
-<body> <a id="top"></a>
+<body>
   <header>
     <div class="nav">
-      <div class="nav-left">
-        <a href="#top" class="nav-left" style="text-decoration: none;">
-          <img src="cear_logo_3.png" alt="CEAR logo" class="logo-img" />
-          <div class="brand-text">
-            <div class="brand-title">CEAR</div>
-            <div class="brand-subtitle">
-              Center for Emergent Alignment Research
-            </div>
+      <div class="nav-left" onclick="window.location.hash='top'; window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <img src="earl_logo.png" alt="EARL logo" class="logo-img" />
+        <div class="brand-text">
+          <div class="brand-title">EARL</div>
+          <div class="brand-subtitle">
+            Emergent Alignment Research Lab
           </div>
         </div>
+      </div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#blog">Blog</a>
-        <a href="#partners">Partners</a>
-        <a href="#team">Team</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div>
         <div class="hero-subtitle">Emergent minds, Intrinsically aligned</div>
         <h1 class="hero-title">
-          Center for Emergent Alignment Research
+          Emergent Alignment Research Lab
         </h1>
         <p class="hero-text">
-        CEAR is an independent nonprofit research institute dedicated to understanding how coherent minds emerge and attune across differences, forming the basis of shared life. We investigate the emergent foundations of orientation, values, and perspective, and develop scalable frameworks for social alignment.
+          EARL is a nonprofit research lab dedicated to understanding how coherent minds emerge and attune across differences, forming the basis of shared life. We investigate the emergent foundations of orientation, values, and perspective, and develop scalable frameworks for social alignment.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#research">
-            Learn more about our work
-          </a>
+        <div class="hero-actions-wrapper">
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#research">
+              Learn more about our work
+            </a>
+          </div>
         </div>
-
-
       </div>
     </section>
 
-    <!-- About CEAR -->
+    <!-- About -->
     <section id="about">
-      <h2>About CEAR</h2>
+      <h2>About EARL</h2>
       <div class="section-card">
         <div class="section-subtitle">Mission</div>
         <p>
-          CEAR exists to understand how minds connect.
+          Emergent Alignment Research Lab exists to understand how minds connect.
         </p>
         <p>
           Our mission is to illuminate the conditions that allow sentient beings to recognize one another, to resonate across differences, and to share a coherent world. From artificial agents to human institutions, we study how attunement between worlds arises, how it fails, and how it can be cultivated.
           <br>
-          We work to establish the foundations of a society where inner clarity and social understanding are systemic possibilities. CEAR serves as a gathering point for those who sense that the future of governance and human flourishing begins with the intrinsic architecture of conscious experience itself. 
+          We work to establish the foundations of a society where inner clarity and social understanding are systemic possibilities. EARL provides an intellectual anchor for those who sense that the future of governance and human flourishing begins with the intrinsic architecture of conscious experience itself. 
         </p>
 
-        <br>
+        <br />
 
         <div class="section-subtitle">Ethos</div>
         <p>
-          CEAR is intentionally lean, independent, and research-first. We blend the rigor of a research institute with the agility of a startup and the openness of a cross-disciplinary lab. We stay flexible, low-ego, and focused on questions that will outlast current research paradigms. Our collaborations emerge where philosophical, scientific, and methodological vectors naturally converge.
+          EARL is intentionally lean and research-first. We blend academic rigor with the agility of a small lab and the openness of cross-disciplinary collaboration. We stay flexible, low-ego, and focused on questions that will outlast current research paradigms. Our collaborations emerge where philosophical, scientific, and methodological vectors naturally converge.
         </p>
       </div>
     </section>
@@ -425,7 +440,7 @@
       <div class="section-card">
         <div class="section-subtitle">Direction</div>
         <p>
-          CEAR studies how alignment can emerge from within an agent's own cognitive and affective
+          EARL studies how alignment can emerge from within an agent's own cognitive and affective
           architecture. Rather than treating alignment as loss function optimization, we focus on the
           developmental and perspectival structures that support coherent agency.
         </p>
@@ -438,7 +453,7 @@
         </p>
 
         <p>
-          CEAR advances a mind-first science of alignment, developing frameworks that connect internal
+          EARL advances a mind-first science of alignment, developing frameworks that connect internal
           coherence to mature forms of reasoning and social interaction. Our research integrates
           phenomenology, the Active Inference framework, developmental psychology, and social alignment
           theory to explain how shared worlds of coherent agency emerge - and how they can be sustained.
@@ -477,8 +492,8 @@
         <!-- Documents -->
         <div class="section-subtitle" >Documents &amp; Recordings</div>
         <ul class="link-list">
-          <li><a href="#">CEAR Whitepaper (forthcoming)</a></li>
           <li><a href="#">Executive Summary (forthcoming)</a></li>
+          <li><a href="#">Whitepaper (forthcoming)</a></li>
           <li><a href="#">Selected publications &amp; recorded talks</a></li>
         </ul>
 
@@ -486,7 +501,7 @@
 
         <div class="section-subtitle" ><a href="#">Blog</a></div>
         <p>
-          CEAR will host occasional essays, research notes, and field reflections. A dedicated blog
+          EARL will host occasional essays, research notes, and field reflections. A dedicated blog
           index will live on a separate page.
         </p>
 
@@ -494,18 +509,16 @@
     </section>
 
 
-
-    <!-- Partners -->
-    <section id="partners">
-      <h2>Research &amp; Funding Partners</h2>
+    <!-- Collaborators -->
+    <section id="projects">
+      <h2>Collaborators &amp; Current Projects</h2>
       <div class="section-card">
-        <div class="section-subtitle">Research Partners</div>
         <p>
-          CEAR is part of a wider community of research groups. We collaborate when projects
-          naturally align, in relationships that are non-exclusive, project-based, and rooted in
-          mutual respect. We welcome inquiries regarding future collaborative possibilities.
+          EARL works within a broader ecosystem of research groups. We collaborate when projects naturally align, in relationships that are non-exclusive, project-based, and rooted in mutual respect. We welcome inquiries regarding future collaborative possibilities.
         </p>
 
+        <br>
+        <div class="section-subtitle">Research Collaborators</div>
         <div class="partner-list">
           <a class="partner-item" href="https://www.aicacp.org/" target="_blank" rel="noopener">
             <div class="partner-item-logo">
@@ -566,27 +579,8 @@
               </div>
             </div>
           </a>
+
         </div>
-
-        <br>
-
-        <div class="section-subtitle" style="margin-top: 1rem;">Funding Partners</div>
-        <p>
-          CEAR is in the process of applying for 501(c)(3) public charity status.
-          If you are interested in exploring philanthropic partnership, please contact the director.
-        </p>
-      </div>
-    </section>
-
-
-
-    <!-- Team -->
-    <section id="team">
-      <h2>Team</h2>
-      <div class="section-card">
-        <p>
-          CEAR is currently led by Founding Director and Chief Scientist <a href="https://www.linkedin.com/in/hjpae">Hongju Pae</a>, operating as a single-PI lab with a growing network of collaborators. CEAR's board members will be listed soon. 
-        </p>
       </div>
     </section>
 
@@ -595,12 +589,10 @@
       <h2>Contact</h2>
       <div class="section-card">
         <p>
-          For collaboration proposals, funding inquiries, or any general questions about
-          CEAR's research agenda, please reach out to:
+          For collaboration proposals, questions about ongoing projects, or inquiries about supporting the lab's work, please reach out to:
         </p>
         <p style="margin-top: 0.4rem;">
-          <strong>Email:</strong>
-          <a href="mailto:hnjpae@gmail.com">hnjpae@gmail.com</a>
+          <a href="https://www.linkedin.com/in/hjpae" target="_blank" rel="noopener">Hongju Pae</a> / <a href="mailto:hnjpae@gmail.com"> hnjpae@gmail.com</a>
         </p>
       </div>
     </section>
@@ -608,7 +600,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span>© <span id="year"></span> CEAR - Center for Emergent Alignment Research</span>
+      <span>© <span id="year"></span> EARL - Emergent Alignment Research Lab</span>
     </div>
   </footer>
 
