@@ -333,6 +333,128 @@
       }
     }
 
+
+    .phase-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.85rem;
+      margin-top: 0.9rem;
+    }
+
+    .phase-card {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0.95rem 1rem;
+      background: #f9fafb;
+    }
+
+    .phase-card h3 {
+      font-size: 0.9rem;
+      color: var(--accent);
+      margin-bottom: 0.35rem;
+      font-weight: 620;
+    }
+
+    .phase-status {
+      display: inline-block;
+      margin-top: 0.55rem;
+      padding: 0.12rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+
+    .project-line {
+      margin-top: 0.42rem;
+    }
+
+    .cross-cutting-label {
+      margin-top: 1.05rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .cross-cutting-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+      margin-top: 0.55rem;
+    }
+
+    .cross-cutting-card {
+      min-height: 150px;
+      padding: 1rem 1.05rem;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: #f9fafb;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .cross-cutting-card h3 {
+      font-size: 0.88rem;
+      line-height: 1.35;
+      color: var(--accent);
+      font-weight: 620;
+      margin-bottom: 0.45rem;
+    }
+
+    .cross-cutting-card p {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+
+    .resource-group + .resource-group {
+      margin-top: 1.1rem;
+    }
+
+    .resource-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.15rem;
+    }
+
+    .pub-list {
+      list-style: none;
+      margin-top: 0.65rem;
+    }
+
+    .pub-list li {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pub-list li:last-child {
+      border-bottom: none;
+    }
+
+    .pub-title {
+      color: var(--accent-soft);
+      font-weight: 560;
+    }
+
+    .pub-meta {
+      display: block;
+      margin-top: 0.12rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 760px) {
+      .phase-grid,
+      .cross-cutting-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cross-cutting-card {
+        min-height: auto;
+      }
+    }
+
+
     footer {
       border-top: 1px solid var(--border);
       margin-top: 3rem;
@@ -376,16 +498,15 @@
         <img src="cear_logo.png" alt="CEAR logo" class="logo-img" />
         <div class="brand-text">
           <div class="brand-title">CEAR Lab</div>
-          <div class="brand-subtitle">
-            Computational Emergent Alignment Research Lab
-          </div>
+          <div class="brand-subtitle">Computational Emergent Alignment Research Lab</div>
         </div>
       </div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#blog">Blog</a>
-        <a href="#projects">Projects</a>
+        <a href="#summaries">Summary</a>
+        <a href="#publications">Resources</a>
+        <a href="#collaborations">Collaborations</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -395,41 +516,35 @@
     <section class="hero">
       <div>
         <div class="hero-subtitle">Emergent Minds, Intrinsically Aligned</div>
-        <h1 class="hero-title">
-          Computational Emergent Alignment Research Lab
-        </h1>
+        <h1 class="hero-title">Computational Emergent Alignment Research Lab</h1>
         <p class="hero-text">
           CEAR Lab is devoted to understanding how coherent minds emerge and come to attune across differences, forming the basis of shared life. We study the emergent foundations of orientation, perspective, and values, and build scalable computational frameworks for social alignment.
         </p>
         <div class="hero-actions-wrapper">
           <div class="hero-actions">
-            <a class="btn btn-primary" href="cear_es_v1_full.pdf" download>
-              Learn more about our work
-            </a>
+            <!-- Place the current Executive Summary PDF in the site root using this filename. -->
+            <a class="btn btn-primary" href="cear_es_2027.pdf" download>Learn more about our work</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
     <section id="about">
       <h2>About CEAR Lab</h2>
       <div class="section-card">
         <div class="section-subtitle">Mission</div>
+        <p>Computational Emergent Alignment Research Lab exists to understand how minds connect.</p>
         <p>
-          Computational Emergent Alignment Research Lab exists to understand how minds connect.
+          Our mission is to illuminate the conditions that allow sentient beings to recognize one another, resonate across differences, and share a coherent world. From artificial agents to human institutions, we study how attunement between worlds arises, how it fails, and how it can be cultivated.
         </p>
         <p>
-          Our mission is to illuminate the conditions that allow sentient beings to recognize one another, to resonate across differences, and to share a coherent world. From artificial agents to human institutions, we study how attunement between worlds arises, how it fails, and how it can be cultivated. 
-          <br>
           We work to establish the foundations of a society in which inner clarity and social understanding are systemic possibilities. Our work complements and extends ongoing efforts across the AI alignment research ecosystem.
         </p>
         <p>
-        CEAR Lab provides an intellectual anchor for those who sense that the future of collective flourishing begins with understanding the intrinsic architecture of non-reductive conscious experience.
+          CEAR Lab provides an intellectual anchor for those who sense that the future of collective flourishing begins with understanding the intrinsic architecture of non-reductive conscious experience.
         </p>
 
         <br />
-
         <div class="section-subtitle">Ethos</div>
         <p>
           CEAR Lab is intentionally lean and research-first. We blend academic rigor with the agility of a small lab and the openness of cross-disciplinary collaboration. We stay flexible, low-ego, and focused on questions that will outlast current research paradigms. Our collaborations emerge where philosophical, scientific, and methodological vectors naturally converge.
@@ -437,217 +552,273 @@
       </div>
     </section>
 
-    <!-- Research -->
     <section id="research">
-      <h2>Research</h2>
+      <h2>Research Program</h2>
       <div class="section-card">
         <div class="section-subtitle">Direction</div>
         <p>
-          CEAR Lab studies how alignment can emerge from within an agent's own cognitive and affective
-          architecture. Rather than treating alignment as loss function optimization, we focus on the
-          perspectival and integrative structures that support coherent agency.
+          CEAR Lab studies how alignment can emerge from within an agent's own cognitive and affective architecture. Rather than treating alignment as loss function optimization, we focus on the perspectival and integrative structures that support coherent agency.
         </p>
-
         <p>
-          Our work targets a core gap in current AI safety research: understanding how systems form stable orientation, integrate values within their environmental context, and maintain
-          long-horizon consistency without relying on externally imposed value functions. We develop
-          computational models that clarify what "alignment" means when approached from an agent’s internal world-model.
+          Our work targets a core gap in current AI safety research: understanding how systems form stable orientation, integrate values within their environmental context, and maintain long-horizon consistency without relying on externally imposed value functions. We develop computational models that clarify what "alignment" means when approached from an agent’s internal world-model.
         </p>
-
         <p>
-          CEAR Lab advances a mind-first science of alignment, developing frameworks that connect
-          internal coherence with flexible perspective-taking and relational attunement. 
-          Our research integrates computationally grounded embodied cognition, phenomenology,
-          the Active Inference framework, and systems theory to explain how shared
-          worlds of coherent agency emerge - and how they can be sustained.
+          CEAR Lab advances a mind-first science of alignment, developing frameworks that connect internal coherence with flexible perspective-taking and relational attunement. Our research integrates computationally grounded embodied cognition, phenomenology, the Active Inference framework, and systems theory to explain how shared worlds of coherent agency emerge - and how they can be sustained.
         </p>
 
+      <div class="phase-grid">
+        <div class="phase-card">
+          <h3>Phase 1: Operationalizing Subjective Perspective</h3>
+          <p>
+            Translates the phenomenological structure of perspective into a minimal computational architecture. Implemented as a slow latent distinct from fast policy adaptation, it provides an operational testbed for perspective-like subjectivity.
+            <br>
+            <br>
 
-        <br>
+          </p>
+          <p class="project-line">
+            <strong>Foundational Project:</strong> minimal computational preconditions for subjective perspective.
+          </p>
+          <span class="phase-status">Established 2026</span>
+        </div>
 
-        <!-- Pillars -->
-        <div class="section-subtitle">Core Research Areas</div>
+        <div class="phase-card">
+          <h3>Phase 2: Integration and Embodied Grounding</h3>
+          <p>
+            Extends perspective into perception, embodiment, and action. Tests how accumulated orientation reorganizes what becomes salient and how bodily history becomes behaviorally consequential.
+          </p>
+          <p class="project-line">
+            <strong>Project 2A:</strong> history-dependent perceptual reorganization and regulated openness to revision.
+          </p>
+          <p class="project-line">
+            <strong>Project 2B:</strong> body-grounded perspective formation and conative attunement.
+          </p>
+          <span class="phase-status">Established 2026</span>
+        </div>
 
-        <p>
-          <strong>1. Affective &amp; Perspective-like Architecture</strong><br>
-          We investigate how affective priors and perspective-like latent structures shape an agent's
-          interpretation of the world. Using Active Inference and related frameworks, we prototype minimal
-          agents whose goals and behaviors emerge from evolving internal perspectives rather than
-          externally specified rules.
-        </p>
+        <div class="phase-card">
+          <h3>Phase 3: Relational Scaling &amp; Social Attunement</h3>
+          <p>
+            Scales perspective from individual agents to social relations between multiple perspective-bearing systems. Tests how distinct orientations become mutually legible and consequential in human-AI and multi-agent interaction.
+          </p>
+          <p class="project-line">
+            <strong>Project 3A:</strong> longitudinal human-AI perspective architecture for language model-based agents.
+          </p>
+          <p class="project-line">
+            <strong>Project 3B:</strong> embodied multi-agent perspective and distributed coherence.
+          </p>
+          <span class="phase-status">Current research</span>
+        </div>
+      </div>
 
-        <p>
-          <strong>2. Perspective-taking based Integrative Alignment</strong><br>
-          We study the structural conditions under which an agent can coordinate multiple perspectives,
-          maintain interpretive stability under perturbation, and reorganize its internal model in
-          coherent ways. Building on the dynamics of perspective and affect, we model these integrative capacities as intrinsic structures emerging within an agent's generative model.
-        </p>
+      <div class="section-subtitle cross-cutting-label">Cross-Cutting Work</div>
+      <div class="cross-cutting-grid">
+        <div class="cross-cutting-card">
+          <h3>Measurement &amp; Causal Analysis</h3>
+          <p>
+            Develops causal emergence assays for identifying where history-bearing organization resides, distinguishing architectural effects from learned organization, and comparing causal structure across single-agent, longitudinal, and multi-agent scales.
+          </p>
+        </div>
 
-        <p>
-          <strong>3. Social Resonance &amp; Multi-agent Coherence</strong><br>
-          We examine the conditions under which agents become mutually interpretable and how
-          shared orientations and attunement patterns arise through interaction. Rather than imposing
-          fixed norms, we analyze how alignment can emerge spontaneously from social feedback,
-          representational overlap, and resonance across internal generative models. 
-        </p>
+        <div class="cross-cutting-card">
+          <h3>Theory &amp; Computational Phenomenology</h3>
+          <p>
+            Translates phenomenological descriptions of subjectivity, embodiment, and intersubjectivity into explicit architectural hypotheses, and uses empirical results to refine the conceptual account of perspective, coherence, and alignment.
+          </p>
+        </div>
+      </div>
 
-        <br>
+    <section id="summaries">
+      <h2>Executive Summary</h2>
+      <div class="section-card">
+        <div class="resource-group">
+          <div class="section-subtitle">Current Program Overview</div>
+          <ul class="link-list">
+            <li>
+              <a href="cear_es_2027.pdf" download><strong>CEAR Lab Executive Summary (2027)</strong></a>
+              <div class="resource-note">Current research program overview, including the 18-month roadmap.</div>
+            </li>
+          </ul>
+        </div>
 
-        <!-- Documents -->
-        <div class="section-subtitle">Selected Documents &amp; Recordings</div>
-        <p>
-          Selected materials representing facets of CEAR Lab's ongoing research.
-        </p>
+        <div class="resource-group">
+          <div class="section-subtitle">Archive</div>
+          <ul class="link-list">
+            <li>
+              <a href="cear_es_v1_full.pdf" download>CEAR Lab Executive Summary (2026)</a>
+              <div class="resource-note">Original program formulation and early roadmap.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <ul class="link-list">
+    <section id="publications">
+      <h2>Publications &amp; Resources</h2>
+      <div class="section-card">
+        <div class="section-subtitle">Selected Publications</div>
+        <ul class="pub-list">
           <li>
-            <a href="cear_es_v1_full.pdf" download>- Executive Summary</a>
+            <a class="pub-title" href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1571098/full" target="_blank" rel="noopener noreferrer">Reflective Analysis on Empirical Theories in Consciousness</a>
+            <span class="pub-meta">Pae, H. (2025). Frontiers in Psychology 16, 1571098.</span>
           </li>
-
           <li>
-            <a href="https://arxiv.org/abs/2602.02902" target="_blank" rel="noopener noreferrer">
-              - (Preprint) Minimal Computational Preconditions for Subjective Perspective
-            </a>
+            <a class="pub-title" href="https://doi.org/10.1609/aaaiss.v8i1.42559" target="_blank" rel="noopener noreferrer">Minimal Computational Preconditions for Subjective Perspective in Artificial Agents</a>
+            <span class="pub-meta">Pae, H. (2026). Proceedings of the AAAI Symposium Series 8(1), 309-315.</span>
           </li>
-
           <li>
-            <a href="https://github.com/hjpae/cearlab-demo" target="_blank" rel="noopener noreferrer">
-              - (GitHub Repository) Minimal Computational Preconditions for Subjective Perspective
-            </a>
+            <a class="pub-title" href="https://arxiv.org/abs/2604.04637" target="_blank" rel="noopener noreferrer">Same World, Differently Given: History-Dependent Perceptual Reorganization in Artificial Agents</a>
+            <span class="pub-meta">Pae, H. (2026). arXiv preprint.</span>
           </li>
-
           <li>
-            <a href="https://docs.google.com/document/d/1PiBQRyO493C_vBykkeYAgtfVcf1-5A8MtFk7xAC6RPQ/edit?usp=sharing"
-               target="_blank" rel="noopener noreferrer">
-              - (Essay) One Universe at the Edge of Another: On Consciousness and the Quest for Social Alignment
-            </a>
+            <a class="pub-title" href="https://link.springer.com/chapter/10.1007/978-3-032-39953-3_17" target="_blank" rel="noopener noreferrer">Body-Grounded Perspective Formation and Conative Attunement in Artificial Agents</a>
+            <span class="pub-meta">Pae, H. (2026). International Conference on Simulation of Adaptive Behavior, 204-216.</span>
           </li>
-
           <li>
-            <a href="https://www.youtube.com/live/v7aSUMX1nfs?t=26051s"
-               target="_blank" rel="noopener noreferrer">
-              - (Recorded Talk) Modeling the Emergence of Perspective: An Active Inference Account of Intentionality
-            </a>
+            <a class="pub-title" href="https://link.springer.com/chapter/10.1007/978-3-032-33195-3_11" target="_blank" rel="noopener noreferrer">Perspective as a Missing Structural Condition for Subjectivity in Active Inference Systems</a>
+            <span class="pub-meta">Pae, H. (2026). International Conference on Artificial General Intelligence, 137-143.</span>
+          </li>
+          <li>
+            <a class="pub-title" href="https://arxiv.org/abs/2607.20708" target="_blank" rel="noopener noreferrer">Perspective Latents as an Architectural Condition for Causal Emergence in Active Inference Agents</a>
+            <span class="pub-meta">Pae, H. (2026). arXiv preprint.</span>
           </li>
         </ul>
 
-
         <br>
 
-        <div class="section-subtitle" ><a href="#">Blog</a></div>
-        <p>
-          CEAR Lab will host occasional essays, research notes, and field reflections. A dedicated blog
-          index will live on a separate page.
-        </p>
+        <div class="section-subtitle">Recorded Talks</div>
+        <ul class="pub-list">
+          <li>
+            <a class="pub-title" href="https://www.youtube.com/watch?v=IJUhrqP6y2I"
+               target="_blank" rel="noopener noreferrer">Minimal Computational Preconditions for Subjective Perspective in Artificial Agents</a>
+            <div class="resource-note">
+              AAAI 2026 Spring Symposium on Machine Consciousness, Apr 2026
+            </div>
+          </li>
 
+          <li>
+            <a class="pub-title" href="https://www.youtube.com/live/ikeQF_ke4WA?si=jyiVpodE3zSjOVR7&t=12339" target="_blank" rel="noopener noreferrer">
+              Perspective as a Missing Structural Condition for Subjectivity in Active Inference Systems
+            </a>
+            <div class="resource-note">
+              19th Annual Conference on Artificial General Intelligence, Jul 2026
+            </div>
+          </li>
+
+          <li>
+            <a class="pub-title" href="https://www.youtube.com/live/v7aSUMX1nfs?t=26051s"
+               target="_blank" rel="noopener noreferrer">
+              Modeling the Emergence of Perspective: An Active Inference Account of Intentionality
+            </a>
+            <div class="resource-note">
+              The 5th Applied Active Inference Symposium, Nov 2025
+            </div>
+          </li>
+
+          <li>
+            <a class="pub-title" href="https://youtu.be/0OXO460Sq3M?si=mudrZPDYP9wIpFgm&t=1392"
+               target="_blank" rel="noopener noreferrer">
+              Lifehome Project: Simulation Environment for Exploring Embodiment
+            </a>
+            <div class="resource-note">
+              Invited talk, Theoretical Neurobiology Group (Friston Lab), Apr 2025
+            </div>
+          </li>
+        </ul>
+
+        <br />
+
+        <div class="resource-group">
+          <div class="section-subtitle">Code Repositories</div>
+          <ul class="link-list">
+            <li><a href="https://github.com/hjpae/cearlab-phase1" target="_blank" rel="noopener noreferrer">- Foundational Project (Phase 1): Minimal Perspective Architecture</a></li>
+            <li><a href="https://github.com/hjpae/cearlab-proj2a" target="_blank" rel="noopener noreferrer">- Project 2A: Perspective-Dependent Perceptual Reorganization</a></li>
+            <li><a href="https://github.com/hjpae/cearlab-proj2b" target="_blank" rel="noopener noreferrer">- Project 2B: Body-Grounded Perspective and Conative Attunement</a></li>
+            <li><a href="https://github.com/hjpae/cearlab-proj3a" target="_blank" rel="noopener noreferrer">- Project 3A: Perspective Architecture as an LLM Wrapper</a></li>
+            <li><a href="https://github.com/hjpae/perspective-causal-emergence" target="_blank" rel="noopener noreferrer">- Causal Emergence in Perspective Latents</a></li>
+          </ul>
+        </div>
+
+        <div class="resource-group">
+          <div class="section-subtitle">Essay</div>
+          <ul class="link-list">
+            <li>
+              <a href="https://docs.google.com/document/d/1PiBQRyO493C_vBykkeYAgtfVcf1-5A8MtFk7xAC6RPQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">- One Universe at the Edge of Another: On Consciousness and the Quest for Social Alignment</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
     </section>
 
-
-    <!-- Collaborators -->
-    <section id="projects">
-      <h2>Projects &amp; Collaborators</h2>
+    <section id="collaborations">
+      <h2>Collaborations &amp; Support</h2>
       <div class="section-card">
         <p>
           CEAR Lab works within a broader ecosystem of research groups. We collaborate when projects naturally align, in relationships that are project-based, non-exclusive, and rooted in mutual respect. We welcome inquiries regarding future collaborative possibilities.
         </p>
 
-        <br>
+        <br />
         <div class="section-subtitle">Research Collaborators</div>
         <div class="partner-list">
           <a class="partner-item" href="https://www.aicacp.org/" target="_blank" rel="noopener">
-            <div class="partner-item-logo">
-              <img src="aicacp_logo.jpg" alt="AICACP" />
-            </div>
+            <div class="partner-item-logo"><img src="aicacp_logo.jpg" alt="AICACP" /></div>
             <div class="partner-item-text">
-              <div class="partner-item-name">AI Capabilities & Alignment Consensus Project</div>
-              <div class="partner-item-desc">
-                Multi-year initiative building shared understanding of AI capabilities, alignment, and governance.
-              </div>
+              <div class="partner-item-name">AI Capabilities &amp; Alignment Consensus Project</div>
+              <div class="partner-item-desc">Multi-year initiative building shared understanding of AI capabilities, alignment, and governance.</div>
             </div>
           </a>
 
           <a class="partner-item" href="https://www.activeinference.institute/" target="_blank" rel="noopener">
-            <div class="partner-item-logo">
-              <img src="actinflogo.png" alt="Active Inference Institute" />
-            </div>
+            <div class="partner-item-logo"><img src="actinflogo.png" alt="Active Inference Institute" /></div>
             <div class="partner-item-text">
               <div class="partner-item-name">Active Inference Institute</div>
-              <div class="partner-item-desc">
-                Open-science institute advancing the rigor and application of the Active Inference framework. 
-              </div>
+              <div class="partner-item-desc">Open-science institute advancing the rigor and application of the Active Inference framework.</div>
             </div>
           </a>
 
           <a class="partner-item" href="https://commongrounds.ai/" target="_blank" rel="noopener">
-            <div class="partner-item-logo">
-              <!-- <img src="cg_logo.png" alt="Common Grounds" /> -->
-            </div>
+            <div class="partner-item-logo"></div>
             <div class="partner-item-text">
               <div class="partner-item-name">Common Grounds</div>
-              <div class="partner-item-desc">
-                Virtual worlds for bridging AI and humanity through play. 
-              </div>
+              <div class="partner-item-desc">Virtual worlds for bridging AI and humanity through play.</div>
             </div>
           </a>
 
           <a class="partner-item" href="https://www.massgeneral.org/psychiatry/research/lazar-lab-for-meditation-research" target="_blank" rel="noopener">
-            <div class="partner-item-logo">
-              <img src="mgh_logo.png" alt="MGH - Lazar Lab" />
-            </div>
+            <div class="partner-item-logo"><img src="mgh_logo.png" alt="MGH - Lazar Lab" /></div>
             <div class="partner-item-text">
               <div class="partner-item-name">Massachusetts General Hospital - Lazar Lab</div>
-              <div class="partner-item-desc">
-                Meditation neuroscience lab focusing on developmental aspects of contemplative maturity.
-              </div>
+              <div class="partner-item-desc">Meditation neuroscience lab focusing on developmental aspects of contemplative maturity.</div>
             </div>
           </a>
 
           <a class="partner-item" href="https://shinzenyoungfoundation.org/" target="_blank" rel="noopener">
-            <div class="partner-item-logo">
-              <!-- <img src="syf_logo.png" alt="Shinzen Young Foundation" /> -->
-            </div>
+            <div class="partner-item-logo"></div>
             <div class="partner-item-text">
               <div class="partner-item-name">Shinzen Young Foundation</div>
-              <div class="partner-item-desc">
-                Advancing scientific research on contemplative practice towards mature development.
-              </div>
+              <div class="partner-item-desc">Advancing scientific research on contemplative practice towards mature development.</div>
             </div>
           </a>
+        </div>
 
-        </div> <!-- /partner-list -->
-
-        <br>
+        <br />
         <div class="section-subtitle">Research Supporters</div>
         <p>
-          CEAR Lab's research is currently supported through institutionally administered restricted donations routed via the Active Inference Institute. 
-          These contributions help sustain exploratory work that is not yet easily funded through conventional grant structures.
+          CEAR Lab's research is currently supported through institutionally administered restricted donations routed via the Active Inference Institute. These contributions help sustain exploratory work that is not yet easily funded through conventional grant structures.
         </p>
-
-
         <ul class="link-list">
           <li>
-            <a href="https://www.paypal.com/donate/?hosted_button_id=XZK68Z2CJKWF8"
-               target="_blank" rel="noopener noreferrer">
-              <strong>Support CEAR Lab research via the Active Inference Institute (PayPal) </strong>
-            </a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=XZK68Z2CJKWF8" target="_blank" rel="noopener noreferrer"><strong>Support CEAR Lab research via the Active Inference Institute (PayPal)</strong></a>
           </li>
         </ul>
-
-        </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
       <div class="section-card">
-        <p>
-          For questions about ongoing projects, collaboration proposals, or inquiries about supporting the lab's work, please reach out to:
-        </p>
+        <p>For questions about ongoing projects, collaboration proposals, or inquiries about supporting the lab's work, please reach out to:</p>
         <p style="margin-top: 0.4rem;">
-          <a href="https://www.linkedin.com/in/hjpae" target="_blank" rel="noopener">Hongju Pae</a> / <a href="mailto:hnjpae@gmail.com"> hnjpae@gmail.com</a>
+          <a href="https://www.linkedin.com/in/hjpae" target="_blank" rel="noopener">Hongju Pae</a> / <a href="mailto:hnjpae@gmail.com">hjpae@activeinference.institute</a>
         </p>
       </div>
     </section>
@@ -655,7 +826,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span>© <span id="year"></span> CEAR Lab - Computational Emergent Alignment Research Lab </span>
+      <span>© <span id="year"></span> CEAR Lab - Computational Emergent Alignment Research Lab</span>
     </div>
   </footer>
 
